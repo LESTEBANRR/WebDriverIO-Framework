@@ -8,6 +8,7 @@ describe("Verify whether webdriveruniversity links on homepage work correctly", 
 		var title=browser.getTitle();
 		expect(title).to.equal('WebDriverUniversity.com');	
 		console.log('Title is: ' + title);
+		browser.debug();
 		browser.click("#contact-us");
 		//browser.pause(500);
 	});
