@@ -1,6 +1,6 @@
 beforeEach(function(){
 	browser.url("/Hidden-Elements/index.html");
-})
+});
 
 describe('Test wether hidden elements exist',function(){
 	it('Button display is set to non display but still exists in html dom therefore should return true',function(done){
