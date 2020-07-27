@@ -38,28 +38,33 @@ describe('Test Contact Us form WebdriverUni',function(){
 		}, 3000);
 		expect(validateSubmissionHeader, 'Successful Submission Message does not exists!').to.be.true;
 	}
+	function confirmUnsuccessfulSubmission(){
+		var validateSubmissionHeader=browser.waitUntil(function(){
+			return browser.getText(unsuccessfulSubmissionSelector) == "Error: all fields are required";
+		}, 3000);
+		expect(browser.getText(unsuccessfulSubmissionSelector)).to.include("Error: all fields are required");
+	}
 
 	contactusDetails.forEach(function(contactDetail){
 		it('Should be able to submit a successful submission via contact us form',function(done){
-			browser.submitDataViaContactUsForm('Joe','Blogs',contactDetail.email,contactDetail.body);
-
-			var successfulMessage=browser.isExisting('#contact_reply h1');
-			expect(successfulMessage,'The Message doesn\'t exists').to.be.true;
-
-			var successfulSubmission=browser.getText('#contact_reply h1');
-			expect(successfulSubmission).to.equal('Thank You for your Message!');
+			setFirstName('Joe');
+			setLastName('Blogs');
+			setEmailAddress(contactDetail.email);
+			setComments(contactDetail.body);
+			clickSubmitButton();
+			confirmSuccessfulSubmission();
 		});
 	});
+
 	it('Should not be able to submit a successful submission via contact us form as all fields are required',
 		function(done){
-		browser.setValue("[name='first_name']",'Mike');
-		browser.setValue("[name='last_name']",'Woods');
-		browser.setValue("[name='email']",'mike_woods@mail.com');
-		browser.click("[type='submit']");
-
-		var successfulMessage=browser.isExisting('#contact_reply h1');
-		expect(successfulMessage,'The Message doesn\'t exists').to.be.false;
+			setFirstName('Mike');
+			setLastName('Woods');
+			setEmailAddress('mike_woods@mail.com');
+			clickSubmitButton();
+			confirmUnsuccessfulSubmission();
 	});
+	
 	it('Should not be able to submit a successful submission via contact us form as all fields are required',
 		function(done){
 		browser.setValue("[name='first_name']",'Sarah');
