@@ -1,7 +1,11 @@
+var request=require('sync-request');
+
 beforeEach(function(){
 	browser.url('/Contact-Us/contactus.html');
 });
 describe('Test Contact Us form WebdriverUni',function(){
+	var res=request('GET','http://jsonplaceholder.typicode.com/posts/1/comments');
+	var contactusDetails=JSON.parse(res.getBody().toString('utf8'));
 
 	it('Should be able to submit a successful submission via contact us form',function(done){
 		browser.setValue("[name='first_name']",'Joe');
