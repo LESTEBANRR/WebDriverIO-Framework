@@ -1,5 +1,5 @@
-var request=require('sync-request');
 
+var request=require('sync-request');
 
 beforeEach(function(){
 	browser.url('/Contact-Us/contactus.html');
@@ -64,21 +64,21 @@ describe('Test Contact Us form WebdriverUni',function(){
 			clickSubmitButton();
 			confirmUnsuccessfulSubmission();
 	});
-	
+
 	it('Should not be able to submit a successful submission via contact us form as all fields are required',
 		function(done){
-		browser.setValue("[name='first_name']",'Sarah');
-		browser.setValue("[name='email']",'sarah_woods@mail.com');
-		browser.click("[type='submit']");
+			setFirstName('Sarah');
+			setEmailAddress('sarah_woods@mail.com');
+			clickSubmitButton();
 
 		var successfulMessage=browser.isExisting('#contact_reply h1');
 		expect(successfulMessage,'The Message doesn\'t exists').to.be.false;
 	});
 	it('Should not be able to submit a successful submission via contact us form as all fields are required',
 		function(done){
-		browser.setValue("[name='first_name']",'Jin');
-		browser.setValue("[name='last_name']",'Jones');
-		browser.click("[type='submit']");
+			setFirstName('Jin');
+			setLastName('Jones');
+			clickSubmitButton();
 
 		var errorText=browser.getText('body');
 		expect(errorText).to.include('Error: all fields are required');
