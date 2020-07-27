@@ -1,5 +1,20 @@
 var request=require('sync-request');
 
+browser.addCommand("submitDataViaContactUsForm", function(first_name,last_name,email,message){
+	if(first_name){
+		browser.setValue("[name='first_name']",first_name);
+	}
+	if(last_name){
+		browser.setValue("[name='last_name']",last_name);
+	}
+	if(email){
+		browser.setValue("[name='email']",email);
+	}
+	if(message){
+		browser.setValue("[name='message']",message);
+	}
+	browser.click("[type='submit']");
+});
 
 beforeEach(function(){
 	browser.url('/Contact-Us/contactus.html');
@@ -7,14 +22,6 @@ beforeEach(function(){
 describe('Test Contact Us form WebdriverUni',function(){
 	var res=request('GET','http://jsonplaceholder.typicode.com/posts/1/comments');
 	var contactusDetails=JSON.parse(res.getBody().toString('utf8'));
-
-	var firstNameSelector="[name='first_name']";
-	var lastNameSelector="[name='last_name']";
-	var emailAddressSelector="[name='email']";
-	var commentsSelector="textarea";
-	var successfulSubmissionSelector="#contact_reply h1";
-	var unsuccessfulSubmissionSelector="body";
-	var submitButtonSelector="[type='submit']";
 
 	contactusDetails.forEach(function(contactDetail){
 		it('Should be able to submit a successful submission via contact us form',function(done){
