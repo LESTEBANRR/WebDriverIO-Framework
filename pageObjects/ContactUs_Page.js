@@ -23,12 +23,34 @@ class ContactUs_Page{
 		return this.submitButton.click();
 	}
 
+	function submitAllInformationViaContactUsForm(first_name,last_name,email,message,submission){
+		if(first_name){
+			this.setFirstName(first_name);
+		}
+		if(last_name){
+			this.setLastName(last_name);
+		}
+		if(email){
+			this.setEmailAddress(email);
+		}
+		if(message){
+			this.setComments(message);
+		}
+			this.clickSubmitButton();
+		if(submission == true){
+			this.confirmSuccessfulSubmission();
+		}else{
+			this.confirmUnsuccessfulSubmission();
+		}
+	}
+
 	function confirmSuccessfulSubmission(){
 		var validateSubmissionHeader=browser.waitUntil(function(){
 			return this.successfulSubmissionHeader.getText() == "Thank You for your Message!";
 		}, 3000);
 		expect(validateSubmissionHeader, 'Successful Submission Message does not exists!').to.be.true;
 	}
+
 	function confirmUnsuccessfulSubmission(){
 		/*
 		var validateSubmissionHeader=browser.waitUntil(function(){
