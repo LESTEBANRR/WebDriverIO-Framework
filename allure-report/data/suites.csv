@@ -1,3 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"broken","Test that the button is clickable ince the ajaz loader completesloading.Attempt to click the button asap","2779",""
-"passed","Test that the button is clickable ince the ajaz loader completesloading.Attempt to click the button after 7 seconds","9513",""
