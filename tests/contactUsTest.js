@@ -6,35 +6,20 @@ beforeEach(function(){
 describe('Test Contact Us form WebdriverUni',function(){
 
 	it('Should be able to submit a successful submission via contact us form',function(done){
-			setFirstName('Joe');
-			setLastName('Blogs');
-			setEmailAddress('joeBlogs@mail.com');
-			setComments('How are you');
-			clickSubmitButton();
-			confirmSuccessfulSubmission();
+			ContactUs_Page.submitAllInformationViaContactUsForm('Joe','Blogs','joeBlogs@mail.com','How are you', 'true');
 	});
 
 	it('Should not be able to submit a successful submission via contact us form as all fields are required',
 		function(done){
-			setFirstName('Mike');
-			setLastName('Woods');
-			setEmailAddress('mike_woods@mail.com');
-			clickSubmitButton();
-			confirmUnsuccessfulSubmission();
+			ContactUs_Page.submitAllInformationViaContactUsForm('Mike','Woods','mike_woods@mail.com',null, 'false');
 	});
 
 	it('Should not be able to submit a successful submission via contact us form as all fields are required',
 		function(done){
-			setFirstName('Sarah');
-			setEmailAddress('sarah_woods@mail.com');
-			clickSubmitButton();
-			confirmUnsuccessfulSubmission();
+			ContactUs_Page.submitAllInformationViaContactUsForm('Sarah',null,'sarah_woods@mail.com',null, 'false');
 	});
 	it('Should not be able to submit a successful submission via contact us form as all fields are required',
 		function(done){
-			setFirstName('Jin');
-			setLastName('Jones');
-			clickSubmitButton();
-			confirmUnsuccessfulSubmission();
+			ContactUs_Page.submitAllInformationViaContactUsForm('Jin','Jones',null,null, 'false');
 	});
 });

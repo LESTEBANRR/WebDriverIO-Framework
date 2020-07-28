@@ -6,24 +6,23 @@ class ContactUs_Page{
 	get submitButton(){return $("[type='submit']");}
 	get successfulSubmissionHeader(){return $("#contact_reply h1");}
 	get unsuccessfulSubmissionHeader(){return $("body");}
-
-	function setFirstName(first_name){
+	setFirstName(first_name){
 		return this.firstName.setValue(first_name);
 	}
-	function setLastName(last_name){
+	setLastName(last_name){
 		return this.lastName.setValue(last_name);
 	}
-	function setEmailAddress(email){
+	setEmailAddress(email){
 		return this.emailAddress.setValue(email);
 	}
-	function setComments(message){
+	setComments(message){
 		return this.comments.setValue(message);
 	}
-	function clickSubmitButton(){
+	clickSubmitButton(){
 		return this.submitButton.click();
 	}
 
-	function submitAllInformationViaContactUsForm(first_name,last_name,email,message,submission){
+	submitAllInformationViaContactUsForm(first_name,last_name,email,message,submission){
 		if(first_name){
 			this.setFirstName(first_name);
 		}
@@ -37,21 +36,22 @@ class ContactUs_Page{
 			this.setComments(message);
 		}
 			this.clickSubmitButton();
-		if(submission == true){
+		if(submission == 'true'){
 			this.confirmSuccessfulSubmission();
-		}else{
+		}
+		if(submission == 'false'){
 			this.confirmUnsuccessfulSubmission();
 		}
 	}
 
-	function confirmSuccessfulSubmission(){
+	confirmSuccessfulSubmission(){
 		var validateSubmissionHeader=browser.waitUntil(function(){
 			return this.successfulSubmissionHeader.getText() == "Thank You for your Message!";
 		}, 3000);
 		expect(validateSubmissionHeader, 'Successful Submission Message does not exists!').to.be.true;
 	}
 
-	function confirmUnsuccessfulSubmission(){
+	confirmUnsuccessfulSubmission(){
 		/*
 		var validateSubmissionHeader=browser.waitUntil(function(){
 			return this.unsuccessfulSubmissionHeader.getText() == "Error: all fields are required";
@@ -59,6 +59,7 @@ class ContactUs_Page{
 		*/
 		expect( this.unsuccessfulSubmissionHeader.getText() ).to.include("Error: all fields are required");
 	}
+
 }
 
 module.exports = new ContactUs_Page();
