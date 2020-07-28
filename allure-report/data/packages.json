@@ -1,0 +1,33 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Test that the button is clickable ince the ajaz loader completesloading",
+    "children" : [ {
+      "name" : "Attempt to click the button asap",
+      "uid" : "d8e7d9537a589303",
+      "parentUid" : "c53782eb574595a4f2d1041d583ec402",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1595957171568,
+        "stop" : 1595957171569,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Attempt to click the button after 7 seconds",
+      "uid" : "7234160709f7a8be",
+      "parentUid" : "c53782eb574595a4f2d1041d583ec402",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595957171570,
+        "stop" : 1595957182638,
+        "duration" : 11068
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "c53782eb574595a4f2d1041d583ec402"
+  } ]
+}

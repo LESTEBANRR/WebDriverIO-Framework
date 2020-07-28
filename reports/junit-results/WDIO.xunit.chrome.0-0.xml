@@ -1,141 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Test_Contact_Us_form_WebdriverUni" timestamp="2020-07-28T12:07:29" time="18.136" tests="4" failures="0" errors="0" skipped="0">
+  <testsuite name="Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" timestamp="2020-07-28T12:26:11" time="11.074" tests="2" failures="0" errors="0" skipped="1">
     <properties>
-      <property name="specId" value="8148ee3e2e6a7f31836408b4d54df5c4"/>
-      <property name="suiteName" value="Test Contact Us form WebdriverUni"/>
+      <property name="specId" value="754c721ade793b66153f181585ac936f"/>
+      <property name="suiteName" value="Test that the button is clickable ince the ajaz loader completesloading"/>
       <property name="capabilities" value="chrome"/>
-      <property name="file" value=".\tests\contactUsTest.js"/>
+      <property name="file" value=".\tests\ajaxClickTest.js"/>
     </properties>
-    <testcase classname="chrome.Test_Contact_Us_form_WebdriverUni" name="Should_be_able_to_submit_a_successful_submission_via_contact_us_form" time="13.018">
-      <system-out>
-        <![CDATA[
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/url - {"url":"http://www.webdriveruniversity.com/Contact-Us/contactus.html"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"first_name"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.23519999613200548-1"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-1/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-1/value - {"value":["J","o","e"],"text":"Joe"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"last_name"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.23519999613200548-2"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-2/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-2/value - {"value":["B","l","o","g","s"],"text":"Blogs"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"email"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.23519999613200548-3"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-3/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-3/value - {"value":["j","o","e","B","l","o","g","s","@","m","(7 more items)"],"text":"joeBlogs@mail.com"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"css selector","value":"textarea"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.23519999613200548-4"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-4/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-4/value - {"value":["H","o","w"," ","a","r","e"," ","y","o","(1 more items)"],"text":"How are you"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"css selector","value":"[type='submit']"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.23519999613200548-5"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.23519999613200548-5/click - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/elements - {"using":"css selector","value":"#contact_reply h1"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":[{"ELEMENT":"0.6288167165069913-1"}]}
-COMMAND: GET http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.6288167165069913-1/text - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":"Thank You for your Message!"}
-]]>
-      </system-out>
+    <testcase classname="chrome.Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" name="Attempt_to_click_the_button_asap" time="0.002">
+      <skipped/>
     </testcase>
-    <testcase classname="chrome.Test_Contact_Us_form_WebdriverUni" name="Should_not_be_able_to_submit_a_successful_submission_via_contact_us_form_as_all_fields_are_required" time="2.002">
+    <testcase classname="chrome.Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" name="Attempt_to_click_the_button_after_7_seconds" time="11.069">
       <system-out>
         <![CDATA[
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/url - {"url":"http://www.webdriveruniversity.com/Contact-Us/contactus.html"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"first_name"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.06307171158179536-1"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.06307171158179536-1/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.06307171158179536-1/value - {"value":["M","i","k","e"],"text":"Mike"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"last_name"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.06307171158179536-2"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.06307171158179536-2/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.06307171158179536-2/value - {"value":["W","o","o","d","s"],"text":"Woods"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"email"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.06307171158179536-3"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.06307171158179536-3/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.06307171158179536-3/value - {"value":["m","i","k","e","_","w","o","o","d","s","(9 more items)"],"text":"mike_woods@mail.com"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"css selector","value":"[type='submit']"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.06307171158179536-4"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.06307171158179536-4/click - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/elements - {"using":"css selector","value":"body"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":[{"ELEMENT":"0.6414255607107757-1"}]}
-COMMAND: GET http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.6414255607107757-1/text - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":"Error: all fields are required"}
-]]>
-      </system-out>
-    </testcase>
-    <testcase classname="chrome.Test_Contact_Us_form_WebdriverUni" name="Should_not_be_able_to_submit_a_successful_submission_via_contact_us_form_as_all_fields_are_required" time="1.642">
-      <system-out>
-        <![CDATA[
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/url - {"url":"http://www.webdriveruniversity.com/Contact-Us/contactus.html"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"first_name"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.13558790788449837-1"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.13558790788449837-1/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.13558790788449837-1/value - {"value":["S","a","r","a","h"],"text":"Sarah"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"email"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.13558790788449837-2"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.13558790788449837-2/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.13558790788449837-2/value - {"value":["s","a","r","a","h","_","w","o","o","d","(10 more items)"],"text":"sarah_woods@mail.com"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"css selector","value":"[type='submit']"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.13558790788449837-3"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.13558790788449837-3/click - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/elements - {"using":"css selector","value":"body"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":[{"ELEMENT":"0.12482605010480619-1"}]}
-COMMAND: GET http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.12482605010480619-1/text - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":"Error: all fields are required"}
-]]>
-      </system-out>
-    </testcase>
-    <testcase classname="chrome.Test_Contact_Us_form_WebdriverUni" name="Should_not_be_able_to_submit_a_successful_submission_via_contact_us_form_as_all_fields_are_required" time="1.47">
-      <system-out>
-        <![CDATA[
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/url - {"url":"http://www.webdriveruniversity.com/Contact-Us/contactus.html"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"first_name"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.8408362430206189-1"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.8408362430206189-1/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.8408362430206189-1/value - {"value":["J","i","n"],"text":"Jin"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"name","value":"last_name"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.8408362430206189-2"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.8408362430206189-2/clear - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.8408362430206189-2/value - {"value":["J","o","n","e","s"],"text":"Jones"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element - {"using":"css selector","value":"[type='submit']"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":{"ELEMENT":"0.8408362430206189-3"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.8408362430206189-3/click - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/elements - {"using":"css selector","value":"body"}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":[{"ELEMENT":"0.6515558156140557-1"}]}
-COMMAND: GET http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568/element/0.6515558156140557-1/text - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":"Error: all fields are required\nError: Invalid email address"}
-COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/6ef8848eb37a4736a0833d8b457e6568 - {}
-RESULT: {"sessionId":"6ef8848eb37a4736a0833d8b457e6568","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/eda84eb0cdaa84c5262582ec0064d3cf/url - {"url":"http://www.webdriveruniversity.com/Ajax-Loader/index.html"}
+RESULT: {"sessionId":"eda84eb0cdaa84c5262582ec0064d3cf","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/eda84eb0cdaa84c5262582ec0064d3cf/element - {"using":"id","value":"button1"}
+RESULT: {"sessionId":"eda84eb0cdaa84c5262582ec0064d3cf","status":0,"value":{"ELEMENT":"0.5474494910706447-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/eda84eb0cdaa84c5262582ec0064d3cf/element/0.5474494910706447-1/click - {}
+RESULT: {"sessionId":"eda84eb0cdaa84c5262582ec0064d3cf","status":0,"value":null}
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/eda84eb0cdaa84c5262582ec0064d3cf - {}
+RESULT: {"sessionId":"eda84eb0cdaa84c5262582ec0064d3cf","status":0,"value":null}
 ]]>
       </system-out>
     </testcase>

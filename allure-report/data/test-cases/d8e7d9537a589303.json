@@ -1,0 +1,47 @@
+{
+  "uid" : "d8e7d9537a589303",
+  "name" : "Attempt to click the button asap",
+  "fullName" : "Test that the button is clickable ince the ajaz loader completesloading.Attempt to click the button asap",
+  "historyId" : "10217347dca429c8f96e4fb8b206a123",
+  "time" : {
+    "start" : 1595957171568,
+    "stop" : 1595957171569,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Test that the button is clickable ince the ajaz loader completesloading"
+  }, {
+    "name" : "testClass",
+    "value" : "Test that the button is clickable ince the ajaz loader completesloading"
+  }, {
+    "name" : "testMethod",
+    "value" : "Attempt to click the button asap"
+  }, {
+    "name" : "package",
+    "value" : "Test that the button is clickable ince the ajaz loader completesloading"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d8e7d9537a589303.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "ae70b6d3b725c3248e811cbab7d04255",
+    "name" : "Test that the button is clickable ince the ajaz loader completesloading",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

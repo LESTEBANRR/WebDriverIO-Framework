@@ -1,0 +1,7 @@
+[ {
+  "values" : [ "{\"maxInstances\":5,\"browserName\":\"chrome\"}" ],
+  "name" : "capabilities"
+}, {
+  "values" : [ "[\"C:\\\\Users\\\\Azul\\\\Documents\\\\L_E\\\\webdriverioFramework\\\\tests\\\\ajaxClickTest.js\"]" ],
+  "name" : "spec files"
+} ]

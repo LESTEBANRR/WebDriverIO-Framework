@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1595957171567' stop='1595957182641'>
+    <name>Test that the button is clickable ince the ajaz loader completesloading</name>
+    <title>Test that the button is clickable ince the ajaz loader completesloading</title>
+    <test-cases>
+        <test-case start='1595957171568' status='pending' stop='1595957171569'>
+            <name>Attempt to click the button asap</name>
+            <title>Attempt to click the button asap</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1595957171570' status='passed' stop='1595957182638'>
+            <name>Attempt to click the button after 7 seconds</name>
+            <title>Attempt to click the button after 7 seconds</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Azul\\Documents\\L_E\\webdriverioFramework\\tests\\ajaxClickTest.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

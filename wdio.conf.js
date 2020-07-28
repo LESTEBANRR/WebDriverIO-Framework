@@ -133,13 +133,19 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    reporters: ['dot','junit','json'],
+    reporters: ['dot','junit','json','allure'],
     reporterOptions: {
         junit:{
             outputDir: './reports/junit-results/'
         },
         json:{
             outputDir: './reports/json-results/'
+        },
+        allure:{
+            outputDir: './reports/allure-results/',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: false,
+            useCucumberStepReporter: false
         }
     },
     //
