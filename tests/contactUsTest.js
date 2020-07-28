@@ -39,9 +39,11 @@ describe('Test Contact Us form WebdriverUni',function(){
 		expect(validateSubmissionHeader, 'Successful Submission Message does not exists!').to.be.true;
 	}
 	function confirmUnsuccessfulSubmission(){
+		/*
 		var validateSubmissionHeader=browser.waitUntil(function(){
 			return browser.getText(unsuccessfulSubmissionSelector) == "Error: all fields are required";
 		}, 3000);
+		*/
 		expect(browser.getText(unsuccessfulSubmissionSelector)).to.include("Error: all fields are required");
 	}
 
@@ -70,20 +72,13 @@ describe('Test Contact Us form WebdriverUni',function(){
 			setFirstName('Sarah');
 			setEmailAddress('sarah_woods@mail.com');
 			clickSubmitButton();
-
-		var successfulMessage=browser.isExisting('#contact_reply h1');
-		expect(successfulMessage,'The Message doesn\'t exists').to.be.false;
+			confirmUnsuccessfulSubmission();
 	});
 	it('Should not be able to submit a successful submission via contact us form as all fields are required',
 		function(done){
 			setFirstName('Jin');
 			setLastName('Jones');
 			clickSubmitButton();
-
-		var errorText=browser.getText('body');
-		expect(errorText).to.include('Error: all fields are required');
-
-		var errorText=browser.isVisible('body');
-		expect(errorText,'Error message is not visible').to.be.true;
+			confirmUnsuccessfulSubmission();
 	});
 });
