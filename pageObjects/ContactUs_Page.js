@@ -4,7 +4,7 @@ class ContactUs_Page{
 	get comments(){return $("textarea");}
 	get emailAddress(){return $("[name='email']");}
 	get submitButton(){return $("[type='submit']");}
-	
+
 	setFirstName(first_name){
 		return this.firstName.setValue(first_name);
 	}
@@ -34,11 +34,13 @@ class ContactUs_Page{
 		if(message){
 			this.setComments(message);
 		}
+
 			this.clickSubmitButton();
-		if(submission == 'true'){
+
+		if(submission == true){
 			this.confirmSuccessfulSubmission();
 		}
-		if(submission == 'false'){
+		if(submission == false){
 			this.confirmUnsuccessfulSubmission();
 		}
 	}
@@ -52,13 +54,13 @@ class ContactUs_Page{
 	}
 
 	confirmUnsuccessfulSubmission(){
-		/*
 		var unsuccessfulSubmissionSelector="body";
+		/*
 		var validateSubmissionHeader=browser.waitUntil(function(){
 			return browser.getText(unsuccessfulSubmissionSelector) == "Error: all fields are required";
 		}, 3000);
 		*/
-		expect( this.unsuccessfulSubmissionHeader.getText() ).to.include("Error: all fields are required");
+		expect( browser.getText(unsuccessfulSubmissionSelector) ).to.include("Error: all fields are required");
 	}
 
 }
