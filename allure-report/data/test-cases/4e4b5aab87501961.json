@@ -1,12 +1,12 @@
 {
-  "uid" : "7234160709f7a8be",
+  "uid" : "4e4b5aab87501961",
   "name" : "Attempt to click the button after 7 seconds",
   "fullName" : "Test that the button is clickable ince the ajaz loader completesloading.Attempt to click the button after 7 seconds",
   "historyId" : "b8a854c167a15f812531b7cd8f475ee2",
   "time" : {
-    "start" : 1595957171570,
-    "stop" : 1595957182638,
-    "duration" : 11068
+    "start" : 1595958386654,
+    "stop" : 1595958396167,
+    "duration" : 9513
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -52,6 +52,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7234160709f7a8be.json",
+  "source" : "4e4b5aab87501961.json",
   "parameterValues" : [ "chrome" ]
 }

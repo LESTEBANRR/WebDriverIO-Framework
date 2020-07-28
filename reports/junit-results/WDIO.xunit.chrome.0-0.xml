@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" timestamp="2020-07-28T12:26:11" time="11.074" tests="2" failures="0" errors="0" skipped="1">
+  <testsuite name="Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" timestamp="2020-07-28T12:46:23" time="12.297" tests="2" failures="0" errors="1" skipped="0">
     <properties>
       <property name="specId" value="754c721ade793b66153f181585ac936f"/>
       <property name="suiteName" value="Test that the button is clickable ince the ajaz loader completesloading"/>
       <property name="capabilities" value="chrome"/>
       <property name="file" value=".\tests\ajaxClickTest.js"/>
     </properties>
-    <testcase classname="chrome.Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" name="Attempt_to_click_the_button_asap" time="0.002">
-      <skipped/>
-    </testcase>
-    <testcase classname="chrome.Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" name="Attempt_to_click_the_button_after_7_seconds" time="11.069">
+    <testcase classname="chrome.Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" name="Attempt_to_click_the_button_asap" time="2.78">
+      <error message="An element could not be located on the page using the given search parameters."/>
       <system-out>
         <![CDATA[
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/eda84eb0cdaa84c5262582ec0064d3cf/url - {"url":"http://www.webdriveruniversity.com/Ajax-Loader/index.html"}
-RESULT: {"sessionId":"eda84eb0cdaa84c5262582ec0064d3cf","status":0,"value":null}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/eda84eb0cdaa84c5262582ec0064d3cf/element - {"using":"id","value":"button1"}
-RESULT: {"sessionId":"eda84eb0cdaa84c5262582ec0064d3cf","status":0,"value":{"ELEMENT":"0.5474494910706447-1"}}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/eda84eb0cdaa84c5262582ec0064d3cf/element/0.5474494910706447-1/click - {}
-RESULT: {"sessionId":"eda84eb0cdaa84c5262582ec0064d3cf","status":0,"value":null}
-COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/eda84eb0cdaa84c5262582ec0064d3cf - {}
-RESULT: {"sessionId":"eda84eb0cdaa84c5262582ec0064d3cf","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c2824822dcf02c06fcbc5db24500bc31/url - {"url":"http://www.webdriveruniversity.com/Ajax-Loader/index.html"}
+RESULT: {"sessionId":"c2824822dcf02c06fcbc5db24500bc31","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c2824822dcf02c06fcbc5db24500bc31/element - {"using":"id","value":"button1555"}
+RESULT: {"message":"no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"button1555\"}","type":"RuntimeError","seleniumStack":{"type":"NoSuchElement","message":"An element could not be located on the page using the given search parameters.","orgStatusMessage":"no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"button1555\"}\n  (Session info: chrome=84.0.4147.89)\n  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.18363 x86_64)"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c2824822dcf02c06fcbc5db24500bc31/screenshot - {}
+RESULT: null
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+Error: An element could not be located on the page using the given search parameters.
+    at click("#button1555") -     at C:\Users\Azul\Documents\L_E\webdriverioFramework\node_modules\wdio-sync\build\at element("#button1555") - C:\Users\Azul\Documents\L_E\webdriverioFramework\node_modules\webdriverio\build\lib\commands\click.js:12:17
+]]>
+      </system-err>
+    </testcase>
+    <testcase classname="chrome.Test_that_the_button_is_clickable_ince_the_ajaz_loader_completesloading" name="Attempt_to_click_the_button_after_7_seconds" time="9.513">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c2824822dcf02c06fcbc5db24500bc31/url - {"url":"http://www.webdriveruniversity.com/Ajax-Loader/index.html"}
+RESULT: {"sessionId":"c2824822dcf02c06fcbc5db24500bc31","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c2824822dcf02c06fcbc5db24500bc31/element - {"using":"id","value":"button1"}
+RESULT: {"sessionId":"c2824822dcf02c06fcbc5db24500bc31","status":0,"value":{"ELEMENT":"0.9345627264869036-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c2824822dcf02c06fcbc5db24500bc31/element/0.9345627264869036-1/click - {}
+RESULT: {"sessionId":"c2824822dcf02c06fcbc5db24500bc31","status":0,"value":null}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c2824822dcf02c06fcbc5db24500bc31/screenshot - {}
+RESULT: null
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/c2824822dcf02c06fcbc5db24500bc31 - {}
+RESULT: {"sessionId":"c2824822dcf02c06fcbc5db24500bc31","status":0,"value":null}
 ]]>
       </system-out>
     </testcase>

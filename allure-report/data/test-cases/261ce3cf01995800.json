@@ -1,0 +1,81 @@
+{
+  "uid" : "261ce3cf01995800",
+  "name" : "Attempt to click the button asap",
+  "fullName" : "Test that the button is clickable ince the ajaz loader completesloading.Attempt to click the button asap",
+  "historyId" : "fbf97cc03b42f06187a2cb52b8d29a7b",
+  "time" : {
+    "start" : 1595958383873,
+    "stop" : 1595958386652,
+    "duration" : 2779
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters.",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"#button1555\") -     at C:\\Users\\Azul\\Documents\\L_E\\webdriverioFramework\\node_modules\\wdio-sync\\build\\at element(\"#button1555\") - C:\\Users\\Azul\\Documents\\L_E\\webdriverioFramework\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters.",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"#button1555\") -     at C:\\Users\\Azul\\Documents\\L_E\\webdriverioFramework\\node_modules\\wdio-sync\\build\\at element(\"#button1555\") - C:\\Users\\Azul\\Documents\\L_E\\webdriverioFramework\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "641178b7ceadabdb",
+      "name" : "Screenshot",
+      "source" : "641178b7ceadabdb.png",
+      "type" : "image/png",
+      "size" : 18248
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test that the button is clickable ince the ajaz loader completesloading"
+  }, {
+    "name" : "testClass",
+    "value" : "Test that the button is clickable ince the ajaz loader completesloading"
+  }, {
+    "name" : "testMethod",
+    "value" : "Attempt to click the button asap"
+  }, {
+    "name" : "package",
+    "value" : "Test that the button is clickable ince the ajaz loader completesloading"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "261ce3cf01995800.json",
+  "parameterValues" : [ "chrome" ]
+}

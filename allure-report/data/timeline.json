@@ -2,28 +2,28 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "Attempt to click the button asap",
-    "uid" : "d8e7d9537a589303",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1595957171568,
-      "stop" : 1595957171569,
-      "duration" : 1
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "0-0",
     "children" : [ {
+      "name" : "Attempt to click the button asap",
+      "uid" : "261ce3cf01995800",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "broken",
+      "time" : {
+        "start" : 1595958383873,
+        "stop" : 1595958386652,
+        "duration" : 2779
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    }, {
       "name" : "Attempt to click the button after 7 seconds",
-      "uid" : "7234160709f7a8be",
+      "uid" : "4e4b5aab87501961",
       "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
       "status" : "passed",
       "time" : {
-        "start" : 1595957171570,
-        "stop" : 1595957182638,
-        "duration" : 11068
+        "start" : 1595958386654,
+        "stop" : 1595958396167,
+        "duration" : 9513
       },
       "flaky" : false,
       "parameters" : [ "chrome" ]

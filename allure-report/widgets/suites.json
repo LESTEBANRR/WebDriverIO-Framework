@@ -5,8 +5,8 @@
     "name" : "Test that the button is clickable ince the ajaz loader completesloading",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
+      "broken" : 1,
+      "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
       "total" : 2

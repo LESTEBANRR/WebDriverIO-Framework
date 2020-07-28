@@ -5,25 +5,25 @@
     "name" : "Test that the button is clickable ince the ajaz loader completesloading",
     "children" : [ {
       "name" : "Attempt to click the button asap",
-      "uid" : "d8e7d9537a589303",
+      "uid" : "261ce3cf01995800",
       "parentUid" : "c53782eb574595a4f2d1041d583ec402",
-      "status" : "skipped",
+      "status" : "broken",
       "time" : {
-        "start" : 1595957171568,
-        "stop" : 1595957171569,
-        "duration" : 1
+        "start" : 1595958383873,
+        "stop" : 1595958386652,
+        "duration" : 2779
       },
       "flaky" : false,
-      "parameters" : [ ]
+      "parameters" : [ "chrome" ]
     }, {
       "name" : "Attempt to click the button after 7 seconds",
-      "uid" : "7234160709f7a8be",
+      "uid" : "4e4b5aab87501961",
       "parentUid" : "c53782eb574595a4f2d1041d583ec402",
       "status" : "passed",
       "time" : {
-        "start" : 1595957171570,
-        "stop" : 1595957182638,
-        "duration" : 11068
+        "start" : 1595958386654,
+        "stop" : 1595958396167,
+        "duration" : 9513
       },
       "flaky" : false,
       "parameters" : [ "chrome" ]
