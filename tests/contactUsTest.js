@@ -5,37 +5,6 @@ beforeEach(function(){
 });
 describe('Test Contact Us form WebdriverUni',function(){
 
-	function setFirstName(first_name){
-		return ContactUs_Page.firstName.setValue(first_name);
-	}
-	function setLastName(last_name){
-		return ContactUs_Page.lastName.setValue(last_name);
-	}
-	function setEmailAddress(email){
-		return ContactUs_Page.emailAddress.setValue(email);
-	}
-	function setComments(message){
-		return ContactUs_Page.comments.setValue(message);
-	}
-	function clickSubmitButton(){
-		return ContactUs_Page.submitButton.click();
-	}
-
-	function confirmSuccessfulSubmission(){
-		var validateSubmissionHeader=browser.waitUntil(function(){
-			return ContactUs_Page.successfulSubmissionHeader.getText() == "Thank You for your Message!";
-		}, 3000);
-		expect(validateSubmissionHeader, 'Successful Submission Message does not exists!').to.be.true;
-	}
-	function confirmUnsuccessfulSubmission(){
-		/*
-		var validateSubmissionHeader=browser.waitUntil(function(){
-			return ContactUs_Page.unsuccessfulSubmissionHeader.getText() == "Error: all fields are required";
-		}, 3000);
-		*/
-		expect( ContactUs_Page.unsuccessfulSubmissionHeader.getText() ).to.include("Error: all fields are required");
-	}
-
 	it('Should be able to submit a successful submission via contact us form',function(done){
 			setFirstName('Joe');
 			setLastName('Blogs');
