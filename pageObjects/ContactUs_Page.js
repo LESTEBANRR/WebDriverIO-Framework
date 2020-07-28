@@ -4,8 +4,7 @@ class ContactUs_Page{
 	get comments(){return $("textarea");}
 	get emailAddress(){return $("[name='email']");}
 	get submitButton(){return $("[type='submit']");}
-	get successfulSubmissionHeader(){return $("#contact_reply h1");}
-	get unsuccessfulSubmissionHeader(){return $("body");}
+	
 	setFirstName(first_name){
 		return this.firstName.setValue(first_name);
 	}
@@ -45,16 +44,18 @@ class ContactUs_Page{
 	}
 
 	confirmSuccessfulSubmission(){
+		var successfulSubmissionSelector="#contact_reply h1";
 		var validateSubmissionHeader=browser.waitUntil(function(){
-			return this.successfulSubmissionHeader.getText() == "Thank You for your Message!";
+			return browser.getText(successfulSubmissionSelector) == "Thank You for your Message!";
 		}, 3000);
 		expect(validateSubmissionHeader, 'Successful Submission Message does not exists!').to.be.true;
 	}
 
 	confirmUnsuccessfulSubmission(){
 		/*
+		var unsuccessfulSubmissionSelector="body";
 		var validateSubmissionHeader=browser.waitUntil(function(){
-			return this.unsuccessfulSubmissionHeader.getText() == "Error: all fields are required";
+			return browser.getText(unsuccessfulSubmissionSelector) == "Error: all fields are required";
 		}, 3000);
 		*/
 		expect( this.unsuccessfulSubmissionHeader.getText() ).to.include("Error: all fields are required");
