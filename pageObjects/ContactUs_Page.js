@@ -43,12 +43,24 @@ class ContactUs_Page{
 			this.clickSubmitButton();
 
 		if(submission == true){
-			//this.confirmSuccessfulSubmission();
+			this.successfulSubmissionHeader.waitForDisplayed(3000);
+			try{
+				expect(this.successfulSubmissionHeaderText).to.equal("Thank You for your Message!");
+			}catch(err){
+				console.log('Exception: '+err);
+				assert.fail();
+			}			
 		}
 		if(submission == false){
-			//this.confirmUnsuccessfulSubmission();
+			try{
+				expect(this.unsuccessfulSubmissionHeaderText).to.have.string("Error: all fields are required");	
+			}catch(err){
+				console.log('Exception: '+err);
+				assert.fail();
+			}
 		}
 	}
+	
 
 }
 
