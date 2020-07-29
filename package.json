@@ -9,16 +9,12 @@
   "author": "L Esteban",
   "license": "ISC",
   "devDependencies": {
+    "@wdio/cli": "^5.4.17",
     "chai": "^4.2.0",
     "del": "^3.0.0",
     "mocha": "^5.2.0",
     "selenium-standalone": "^6.15.6",
     "sync-request": "^6.0.0",
-    "wdio-allure-reporter": "^0.8.3",
-    "wdio-json-reporter": "^0.4.0",
-    "wdio-junit-reporter": "^0.4.4",
-    "wdio-mocha-framework": "^0.6.4",
-    "wdio-selenium-standalone-service": "0.0.12",
-    "webdriverio": "^4.13.2"
+    "webdriverio": "^5.4.17"
   }
 }
