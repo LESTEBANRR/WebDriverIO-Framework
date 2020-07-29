@@ -5,6 +5,11 @@ class ContactUs_Page{
 	get emailAddress(){return $("[name='email']");}
 	get submitButton(){return $("[type='submit']");}
 
+	get successfulSubmissionHeader(){return $("#contact_reply h1");}
+	get unsuccessfulSubmissionHeader(){return $("body");}
+	get successfulSubmissionHeaderText(){return this.successfulSubmissionHeader.getText();}
+	get unsuccessfulSubmissionHeaderText(){return this.unsuccessfulSubmissionHeader.getText();}
+
 	setFirstName(first_name){
 		return this.firstName.setValue(first_name);
 	}
@@ -38,29 +43,11 @@ class ContactUs_Page{
 			this.clickSubmitButton();
 
 		if(submission == true){
-			this.confirmSuccessfulSubmission();
+			//this.confirmSuccessfulSubmission();
 		}
 		if(submission == false){
-			this.confirmUnsuccessfulSubmission();
+			//this.confirmUnsuccessfulSubmission();
 		}
-	}
-
-	confirmSuccessfulSubmission(){
-		var successfulSubmissionSelector="#contact_reply h1";
-		var validateSubmissionHeader=browser.waitUntil(function(){
-			return browser.getText(successfulSubmissionSelector) == "Thank You for your Message!";
-		}, 3000);
-		expect(validateSubmissionHeader, 'Successful Submission Message does not exists!').to.be.true;
-	}
-
-	confirmUnsuccessfulSubmission(){
-		var unsuccessfulSubmissionSelector="body";
-		/*
-		var validateSubmissionHeader=browser.waitUntil(function(){
-			return browser.getText(unsuccessfulSubmissionSelector) == "Error: all fields are required";
-		}, 3000);
-		*/
-		expect( browser.getText(unsuccessfulSubmissionSelector) ).to.include("Error: all fields are required");
 	}
 
 }
