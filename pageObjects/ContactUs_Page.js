@@ -44,10 +44,11 @@ class ContactUs_Page{
 			this.clickSubmitButton();
 
 		if(submission == true){
-			this.confirmSuccessfulSubmission();
+			//this.confirmSuccessfulSubmission();
+			//this.successfulSubmissionHeader.waitForDisplayed(3000);
 		}
 		if(submission == false){
-			this.confirmUnsuccessfulSubmission();
+			//this.confirmUnsuccessfulSubmission();
 		}
 	}
 
