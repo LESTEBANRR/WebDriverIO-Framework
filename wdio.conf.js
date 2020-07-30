@@ -31,7 +31,8 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        './pageObjects/*_Page.js'
+        './pageObjects/*_Page.js',
+        './exampleTests(wdio v4)/*.js'
     ],
     //
     // ============
