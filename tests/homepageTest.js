@@ -4,6 +4,7 @@ const { assert } = require("chai");
 
 describe("Test webdriveruni homepage",()=>{
     it("Validate whether the webdriver uni homepage title is correct",()=>{
+        browser.maximizeWindow();
         browser.url('./');
         const title=browser.getTitle();
         try{

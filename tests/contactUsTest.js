@@ -1,6 +1,7 @@
 var ContactUs_Page= require("../pageObjects/ContactUs_Page.js");
 
 beforeEach(function(){
+	browser.maximizeWindow();
 	browser.url('/Contact-Us/contactus.html');
 });
 describe('Test Contact Us form WebdriverUni',function(){
